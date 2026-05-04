@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+cdk.out/
+
+# CDK
+*.js.map
+*.d.ts
+
+# OS
+.DS_Store
+
+# AI
+.claude/settings.local.json
+spec/

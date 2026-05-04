@@ -1,0 +1,25 @@
+{
+  "name": "CloudFlare-ACM-federator CDK DevContainer",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "runArgs": ["--name=claudflare-acm-federator-cdk-devcontainer"],
+  "features": {
+    "ghcr.io/devcontainers/features/aws-cli:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/docker-in-docker:1": {}
+  },
+  "customizations": {
+      "vscode": {
+          "extensions": [
+              "openai.chatgpt"
+          ]
+      }
+  },
+  "containerEnv": {
+    "AWS_DEFAULT_REGION": "ap-northeast-1"
+  },
+  "postCreateCommand": "bash ${containerWorkspaceFolder}/.devcontainer/scripts/install-claude-code.sh && bash ${containerWorkspaceFolder}/.devcontainer/scripts/install-uvx.sh",
+  "remoteUser": "node"
+}
