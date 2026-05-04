@@ -112,7 +112,3 @@ cd cdk && npm run typecheck
 | Secrets Manager | $0.40 (1 シークレット) |
 | CloudWatch Logs | $0.00 (無料枠内) |
 | **合計** | **~$0.40/月** |
-
-## 詳細仕様
-
-[spec/SPEC.md](spec/SPEC.md) を参照。
